@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  
+  <title>解决shadowsocks端口被占用问题(windows客户端) | 中豪的小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  
+    <meta name="author" content="yinzh">
+  
+  
+    <meta name="description" content="打开命令提示符
+
+查看占用1080端口的进程
+1- netstat -aon | findstr &quot;1080&quot;
+
+定位占用该端口的应用
+1tasklist | findstr &quot;PID进程号&quot;
+
+关闭进程
+1taskkill /pid &amp;lt;pid&amp;gt;
+
+强行终止
+1taskkill -f /pid &amp;lt;pid&amp;gt;">
+  
+  <meta name="description" content="打开命令提示符
+
+查看占用1080端口的进程
+1- netstat -aon | findstr &quot;1080&quot;
+
+定位占用该端口的应用
+1tasklist | findstr &quot;PID进程号&quot;
+
+关闭进程
+1taskkill /pid &amp;lt;pid&amp;gt;
+
+强行终止
+1taskkill -f /pid &amp;lt;pid&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决shadowsocks端口被占用问题(windows客户端)">
+<meta property="og:url" content="http://yinzh.org/2016/01/02/解决shadowsocks端口被占用问题/index.html">
+<meta property="og:site_name" content="中豪的小站">
+<meta property="og:description" content="打开命令提示符
+
+查看占用1080端口的进程
+1- netstat -aon | findstr &quot;1080&quot;
+
+定位占用该端口的应用
+1tasklist | findstr &quot;PID进程号&quot;
+
+关闭进程
+1taskkill /pid &amp;lt;pid&amp;gt;
+
+强行终止
+1taskkill -f /pid &amp;lt;pid&amp;gt;">
+<meta property="og:updated_time" content="2016-01-02T11:52:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="解决shadowsocks端口被占用问题(windows客户端)">
+<meta name="twitter:description" content="打开命令提示符
+
+查看占用1080端口的进程
+1- netstat -aon | findstr &quot;1080&quot;
+
+定位占用该端口的应用
+1tasklist | findstr &quot;PID进程号&quot;
+
+关闭进程
+1taskkill /pid &amp;lt;pid&amp;gt;
+
+强行终止
+1taskkill -f /pid &amp;lt;pid&amp;gt;">
+  
+    <link rel="alternate" href="/atom.xml" title="中豪的小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header">
+  <div class="title">
+    <h1><a href="/">中豪的小站</a></h1>
+    <p><a href="/"></a></p>
+  </div>
+  <nav class="nav">
+    <ul>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/archives">Archives</a></li>
+      
+      
+        <li><a href="/atom.xml">RSS</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</header>
+    <div class="content"><article class="post">
+  <header>
+    
+      <div class="icon"></div>
+      <a href="/2016/01/02/解决shadowsocks端口被占用问题/">
+  <time datetime="2016-01-02T11:45:00.000Z">
+    2016-01-02
+  </time>
+</a>
+    
+    
+  
+    <h1 class="title">解决shadowsocks端口被占用问题(windows客户端)</h1>
+  
+
+  </header>
+  
+  <div class="entry">
+    
+      <ul>
+<li><p>打开命令提示符</p>
+</li>
+<li><p>查看占用1080端口的进程</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- netstat -aon | <span class="built_in">findstr</span> "<span class="number">1080</span>"</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>定位占用该端口的应用</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tasklist | <span class="built_in">findstr</span> "PID进程号"</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>关闭进程</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">taskkill</span> /pid &lt;pid&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>强行终止</p>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="winutils">taskkill</span> -f /pid &lt;pid&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+    
+  </div>
+  <footer>
+    
+      
+  <div class="categories">
+    <a class="categories-link" href="/categories/issues/">issues</a>
+  </div>
+
+      
+  <div class="tags">
+    <a class="tags-link" href="/tags/shadowsocks/">shadowsocks</a>
+  </div>
+
+    
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+</div>
+  </div>
+  <footer id="footer"><div class="copyright">
+  
+  &copy; 2016 <a href="/">yinzh</a>
+  
+</div>
+<div class="theme-copyright">
+  Theme by <a href="https://github.com/orderedlist" target="_blank">orderedlist</a>
+   | 
+  Redesign by <a href="http://heroicyang.com/" target="_blank">Heroic Yang</a>
+</div>
+<div class="clearfix"></div></footer>
+  <script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="/js/scale.fix.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+</script>
+
+
+</body>
+</html>
